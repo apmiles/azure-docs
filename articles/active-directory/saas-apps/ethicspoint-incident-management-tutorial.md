@@ -105,15 +105,15 @@ To configure Azure AD single sign-on with EthicsPoint Incident Management (EPIM)
     a. In the **Sign-on URL** text box, type a URL using the following pattern:
     
     | |
-	|--|
-	| `https://<companyname>.navexglobal.com`|
-	| `https://<companyname>.ethicspointvp.com`|
-
+	| `https://<companyname>.navexone.com`|
+	
     b. In the **Identifier** box, type a URL using the following pattern:
-    `https://<companyname>.navexglobal.com/adfs/services/trust`
+    `https://<servername>.navexglobal.com/Shibboleth`
+    `*<servername> Test = valet; Production = doorman`
 
     c. In the **Reply URL** text box, type a URL using the following pattern:
-    `https://<servername>.navexglobal.com/adfs/ls/`
+    `https://<servername>.navexglobal.com/Shibboleth.sso/SAML2/POST`
+    `*<servername> Test = valet; Production = doorman`
 
 	> [!NOTE]
 	> These values are not real. Update these values with the actual Sign-On URL, Identifier and Reply URL. Contact [EthicsPoint Incident Management (EPIM) Client support team](https://www.navexglobal.com/company/contact-us) to get these values. You can also refer to the patterns shown in the **Basic SAML Configuration** section in the Azure portal.
